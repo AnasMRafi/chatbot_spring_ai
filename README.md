@@ -1,12 +1,12 @@
-# JeeChatBot 🤖
+# JeeChatBot
 
 An AI-powered chatbot built with **Spring Boot** and **Spring AI**, integrated with **Telegram** for seamless conversational experiences. This bot leverages OpenAI's GPT models and supports custom tools via the Model Context Protocol (MCP).
 
-## 📸 Demo
+## Demo
 
 ![Telegram Bot Demo](screenshots/telegram_demo.png)
 
-## ✨ Features
+## Features
 
 - **AI-Powered Responses** – Uses OpenAI GPT-4o for intelligent conversations
 - **Telegram Integration** – Full Telegram bot support with typing indicators
@@ -15,7 +15,7 @@ An AI-powered chatbot built with **Spring Boot** and **Spring AI**, integrated w
 - **MCP Client Support** – Model Context Protocol for external tool integration
 - **REST API** – HTTP endpoint for chat interactions
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Technology | Version |
 |------------|---------|
@@ -24,7 +24,7 @@ An AI-powered chatbot built with **Spring Boot** and **Spring AI**, integrated w
 | Spring AI | 1.1.0-M4 |
 | Telegram Bots | 6.9.7.1 |
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 src/main/java/org/anas/chat_bot/
@@ -39,7 +39,7 @@ src/main/java/org/anas/chat_bot/
     └── ChatController.java      # REST API controller
 ```
 
-## ⚙️ Configuration
+## Configuration
 
 Create or update `src/main/resources/application.properties`:
 
@@ -64,7 +64,7 @@ export OPENAI_API_KEY=your-openai-api-key
 export TELEGRAM_BOT_TOKEN=your-telegram-bot-token
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -87,7 +87,7 @@ mvn clean install
 mvn spring-boot:run
 ```
 
-## 📡 API Endpoints
+## API Endpoints
 
 ### Chat Endpoint
 
@@ -100,7 +100,7 @@ GET /chat?querry={your-message}
 curl "http://localhost:8087/chat?querry=Hello"
 ```
 
-## 🤖 Telegram Bot Usage
+## Telegram Bot Usage
 
 1. Search for your bot on Telegram (e.g., `@JeeChatBot`)
 2. Start a conversation with `/start`
@@ -108,7 +108,7 @@ curl "http://localhost:8087/chat?querry=Hello"
 
 The bot will show a "typing" indicator while processing your request.
 
-## 🔧 Adding Custom Tools
+## Adding Custom Tools
 
 Create a new tool class in `org.anas.chat_bot.tools`:
 
@@ -123,11 +123,3 @@ public class MyCustomTools {
     }
 }
 ```
-
-## 📝 License
-
-This project is for educational purposes.
-
-## 👨‍💻 Author
-
-**Anas** - JEE Microservices Course
